@@ -33,6 +33,8 @@ SCT_SD_1/
 
 ## 📷 Screenshots
 
+![Screenshot](images/bg.png)
+
 
 ---
 
