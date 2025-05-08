@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="screen welcome active" id="welcomeScreen">
+        <h1><i class="fas fa-thermometer-half"></i> TempConvert+</h1>
+        <p>Convert between <strong>Celsius</strong>, <strong>Fahrenheit</strong>, and <strong>Kelvin</strong> instantly.</p>
+        <button onclick="showConverter()">Start Converting</button>
+    </div>
+
+    <div class="screen converter" id="converterScreen">
+        <h2><i class="fas fa-temperature-high"></i> Temperature Converter</h2>
+        <input type="number" id="inputTemp" placeholder="Enter temperature">
+
+        <label for="fromUnit">From:</label>
+        <select id="fromUnit">
+            <option value="C">Celsius (°C)</option>
+            <option value="F">Fahrenheit (°F)</option>
+            <option value="K">Kelvin (K)</option>
+        </select>
+
+        <label for="toUnit">To:</label>
+        <select id="toUnit">
+            <option value="C">Celsius (°C)</option>
+            <option value="F">Fahrenheit (°F)</option>
+            <option value="K">Kelvin (K)</option>
+        </select>
+
+        <button onclick="convertTemp()"><i class="fas fa-exchange-alt"></i> Convert</button>
+        <div class="result" id="result">Result: </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
